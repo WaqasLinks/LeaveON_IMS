@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a71ead0c5fff4684a293b64612817fd5" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Models.BankAccount" Width="1.5" PointX="8.25" PointY="49.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.BusinessInfo" Width="1.5" PointX="0.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Calendar" Width="1.5" PointX="5.25" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Customer" Width="1.5" PointX="3" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Department" Width="1.5" PointX="3" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Employee" Width="1.5" PointX="5.25" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Expense" Width="1.5" PointX="7.5" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ExpenseDetail" Width="1.5" PointX="12.75" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Loan" Width="1.5" PointX="10.5" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.LoanDetail" Width="1.5" PointX="15.75" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Location" Width="1.5" PointX="3" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.MyBusinessInfo" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Payment" Width="1.5" PointX="15.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PO" Width="1.5" PointX="10.5" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.POD" Width="1.5" PointX="15.75" PointY="45.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Product" Width="1.5" PointX="5.25" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductDetail" Width="1.5" PointX="15.75" PointY="36.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductionOrder" Width="1.5" PointX="7.5" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductionOrderDetail" Width="1.5" PointX="12.75" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Rent" Width="1.5" PointX="7.5" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.RentDetail" Width="1.5" PointX="18.75" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Right" Width="1.5" PointX="7.5" PointY="45.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Service" Width="1.5" PointX="10.5" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ServiceDetail" Width="1.5" PointX="18.75" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.SO" Width="1.5" PointX="13.5" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.SOD" Width="1.5" PointX="18.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Supplier" Width="1.5" PointX="3" PointY="49.875" IsExpanded="true" />
+        <AssociationConnector Association="Models.FK_PO_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_SO_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Customer_Business" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Department_Business" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Location_Business" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Supplier_Business" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Calendar_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Rent_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Service_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_SO_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Expense_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Loan_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PO_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductionOrder_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Rent_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Rights_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Service_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_SO_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Expense_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ExpenseDetail_Expense" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ExpenseDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Loan_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_LoanDetail_Loan" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_LoanDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Product_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_Payment_SO" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PO_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_POD_PO" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_POD_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductionOrderDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_RentDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ServiceDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_SOD_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductDetail_Rent" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductionOrderDetail_ProductionOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_RentDetail_Rent" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ServiceDetail_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_SOD_SO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
