@@ -263,12 +263,12 @@
             {
               if (User.IsInRole("Admin") || User.IsInRole("Manager") || User.IsInRole("User"))
               {
-                <li class="nav-item">
+                @*<li class="nav-item">
                   <a href="/Dashboard/Index" class="nav-link">
                     <i class="nav-icon fa fa-chart-pie"></i>
                     <p>Dashboard</p>
                   </a>
-                </li>
+                </li>*@
               }
               if (User.IsInRole("Admin") || User.IsInRole("Manager") || User.IsInRole("User"))
               {
@@ -279,7 +279,7 @@
           </a>
         </li>*@
 
-                <li class="nav-item">
+                @*<li class="nav-item">
                   <a href="/Items/Index" class="nav-link">
                     <i class="nav-icon fa fa-laptop"></i>
                     <p>Devices</p>
@@ -304,7 +304,102 @@
                     <i class="nav-icon fa fa-history"></i>
                     <p>Activity Log</p>
                   </a>
+                </li>*@
+
+
+                <li class="nav-item">
+                  <a href="/Dashboard/SearchData" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p>Dashboard</p>
+                  </a>
                 </li>
+
+                <li class="nav-item">
+                  <a href="/SOSR/Create?IsReturn=false" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p>New Sale</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/SOSR/Index" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p><b>Sales History</b></p>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/POPR/Create?IsReturn=false" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p>New Purchase</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/POPR/Index" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p><b>Purchases</b></p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/Products/Create" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p>New Product</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/Products/Index" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p><b>Products List</b></p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/StockTransections/Summary" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p>Stock Transections</p>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/Customers/Create" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p>New Customer</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/Customers/Index" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p><b>Customers List</b></p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/Suppliers/Create" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p>New Supplier</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/Suppliers/Index" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p><b>Suppliers List</b></p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/MyBusinessInfoes/Edit/1" class="nav-link">
+                    <i class="nav-icon fa fa-laptop"></i>
+                    <p><b>My Business Info</b></p>
+                  </a>
+                </li>
+
+                
+
+
 
 
               }
